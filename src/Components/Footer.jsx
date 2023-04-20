@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from '../assets/logo.png'
 
@@ -8,11 +8,11 @@ function Footer(){
         <footer>
             <img src={logo} alt="" />
     
-            <NavLink to='/' className="footer-title">Alex hitchens</NavLink>
+            <a href="/" className="footer-title">Alex hitchens</a>
     
             <div className="footer-container">
-                <NavLink to='' className="term">Conditions Générales de Ventes</NavLink>
-                <NavLink to='' className="privacy">Politique de confidentialité</NavLink>
+                <Link to='' className="term">Conditions Générales de Ventes</Link>
+                <Link to='' className="privacy">Politique de confidentialité</Link>
             </div>
         </footer>
     )
